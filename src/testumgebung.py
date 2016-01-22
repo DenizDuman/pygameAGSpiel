@@ -6,7 +6,7 @@ import math
 sprites = {}
 sprites["Kugel"] = pygame.image.load("C:\Programmieren\Python\pygameAGSpiel\media\Kugel.png")
 sprites["Blume"] = pygame.image.load("C:\Programmieren\Python\pygameAGSpiel\media\Blume_01.png")
-#sprites["Spieler"] = pygame.image.load("gelb.gif")
+sprites["Spieler"] = pygame.image.load("C:\Programmieren\Python\pygameAGSpiel\media\Spieler.png")
 
 
 HOEHE = 500
@@ -28,7 +28,7 @@ while not gewonnen and not abgebrochen:
 	
 	
 	fenster.fill((255,255,255))
-	fenster.blit(sprites["Blume"], (50,50))
+	fenster.blit(sprites["Spieler"], (50,50))
 	pygame.display.update()
 	fps.tick(30)
 	pygame.display.set_caption("Fps: " + str((round( fps.get_fps(), 2))))
