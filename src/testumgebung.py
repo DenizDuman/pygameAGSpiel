@@ -19,9 +19,7 @@ x_richtung = 50
 x_change = 0
 y_richtung= 100
 
-def jump:
-	
-	pass
+
 	
 
 gewonnen = False
@@ -35,9 +33,14 @@ while not gewonnen and not abgebrochen:
 			print(event.pos)
 		if event.type == pygame.KEYDOWN:
 			if event.key == pygame.K_d:
-				x_change = 10
+				x_change += 10
 			if event.key == pygame.K_a:
-				x_change = -10
+				x_change += -10
+			if event.type == pygame.KEYUP:
+				if event.key == pygame.K_a:
+					x_change += 10
+				if event.key == pygame.K_d:
+					x_change += -10
 			if event.key == pygame.K_SPACE:
 				y_richtung-=10
 				
