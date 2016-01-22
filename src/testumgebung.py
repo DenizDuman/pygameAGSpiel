@@ -20,7 +20,6 @@ class Kugel:
 def jump( durchlauf):
 	sprunghoehe = 48
 	x = int(sprunghoehe * math.sin(math.pi / 60 * durchlauf)) - int(sprunghoehe * math.sin(math.pi / 60 * (durchlauf - 1)))
-	print int(sprunghoehe * math.sin(math.pi / 60 * durchlauf)) - int(sprunghoehe * math.sin(math.pi / 60 * (durchlauf - 1)))
 	return x
 	
 	
