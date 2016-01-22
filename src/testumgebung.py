@@ -18,6 +18,12 @@ fps = pygame.time.Clock()
 x_richtung = 50
 x_change = 0
 y_richtung= 100
+
+def jump:
+	
+	pass
+	
+
 gewonnen = False
 abgebrochen = False
 
