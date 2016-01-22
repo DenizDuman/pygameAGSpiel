@@ -24,13 +24,11 @@ while not gewonnen and not abgebrochen:
 			abgebrochen = True
 		elif event.type == pygame.MOUSEBUTTONUP:
 			print(event.pos)
-			aspalte = event.pos[0] / 100
-			if spielfeld[0][aspalte] == 0:
-				geklickt = True
+			
 	
 	
 	fenster.fill((255,255,255))
-	fenster.blit(sprites["Blume"], (BREITE / 2, HOEHE))
+	fenster.blit(sprites["Blume"], (50,50))
 	pygame.display.update()
 	fps.tick(30)
 	pygame.display.set_caption("Fps: " + str((round( fps.get_fps(), 2))))
