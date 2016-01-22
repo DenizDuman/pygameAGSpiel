@@ -27,11 +27,15 @@ while not gewonnen and not abgebrochen:
 			abgebrochen = True
 		elif event.type == pygame.MOUSEBUTTONUP:
 			print(event.pos)
-		elif event.type == pygame.KEYDOWN:
+		if event.type == pygame.KEYDOWN:
 			if event.key == pygame.K_d:
 				x_change = 10
 			if event.key == pygame.K_a:
 				x_change = -10
+		if event.type == pygame.KEYUP:
+			if event.key == pygame.K_a or event.key == pygame.K_d:
+				x_change = 0
+			
 	x_richtung += x_change
 					
 			
