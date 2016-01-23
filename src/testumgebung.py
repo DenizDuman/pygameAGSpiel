@@ -60,12 +60,17 @@ x_change = 0
 geschwindigkeit = 5
 blickrichtung = 1 # blickrichtung > 0 rechts          blickrichtung < 0 links
 
+<<<<<<< HEAD
 sprungAktiviert = False
 sprungDauer = 0
 y_change = 0
 
 geschossen = False
 kugeln = []
+=======
+
+	
+>>>>>>> origin/master
 
 gewonnen = False
 abgebrochen = False
@@ -80,9 +85,20 @@ while not gewonnen and not abgebrochen:
 			geschossen = True
 		if event.type == pygame.KEYDOWN:
 			if event.key == pygame.K_d:
+<<<<<<< HEAD
 				x_change += geschwindigkeit
 			if event.key == pygame.K_a:
 				x_change -= geschwindigkeit
+=======
+				x_change += 10
+			if event.key == pygame.K_a:
+				x_change += -10
+			if event.type == pygame.KEYUP:
+				if event.key == pygame.K_a:
+					x_change += 10
+				if event.key == pygame.K_d:
+					x_change += -10
+>>>>>>> origin/master
 			if event.key == pygame.K_SPACE:
 				sprungAktiviert = True
 		if event.type == pygame.KEYUP:
